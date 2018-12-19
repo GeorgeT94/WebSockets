@@ -10,12 +10,15 @@
   </head>
   <body>
     <div class="container">
-      <fieldset>
-        <form action="/" method="post">
-          <input name="city" type="text" class="ghost-input" placeholder="Enter a City" required>
-          <input type="submit" class="ghost-button" value="Get Weather">
-        </form>
-      </fieldset>
+      <div class="status-info">
+        <p id="status">Not connected</p>
+      </div>
+
+      <div class="input-message" ><input type="text" id="text-input"></input></div>
+
+      <div class="submit"><input type="button" value="Send Message" onclick="sendMessage()"></div>
+
+      <div class="response-message" id="response" ></div>
     </div>
   </body>
 </html>
